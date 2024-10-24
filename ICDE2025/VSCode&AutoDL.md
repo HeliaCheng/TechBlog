@@ -35,7 +35,11 @@ tmux detach
  ## vim,:q
  vim to open the file in the terminal
  :q means leave without anything changed
+ :wq means keep the change and leave
  
  ## check the envs
  cd /root/miniconda3/envs/
+ 
+ ## check the terminal history
+ ctrl+ B then [
  
