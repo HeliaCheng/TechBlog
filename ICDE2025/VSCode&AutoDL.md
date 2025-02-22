@@ -27,6 +27,17 @@ tmux detach<br>
 ## git clone
  if it doesnt work, try replace github.com to githubfast.com(help the server inside China,its a mirror website)
 
+ ## 下载数据集
+直接从huggingface、hf-mirror 下载： <br>
+#export HF_ENDPOINT=https://hf-mirror.com <br>
+huggingface-cli download --repo-type dataset --resume-download 数据集名（../..） --local-dir /root/autodl-tmp/.. <br>
+
+## 删除隐藏.cache等缓存文件
+ ls -la /root/autodl-tmp  <br>
+ rm -rf /root/autodl-tmp/.*  <br>
+
+ 
+
 ## file move and download
 %move file to another directory<br>
  mv A B % move A to B<br>
