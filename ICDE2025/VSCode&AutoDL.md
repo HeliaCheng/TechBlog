@@ -35,6 +35,15 @@ huggingface-cli download --repo-type dataset --resume-download 数据集名（..
 ## 删除隐藏.cache等缓存文件
  ls -la /root/autodl-tmp  <br>
  rm -rf /root/autodl-tmp/.*  <br>
+%删除含有xx的文件夹名（不含子目录）
+find /path/to/folder -maxdepth 1 -type d -name "*apartment*" -exec rm -r {} +
+%含子目录
+find /path/to/folder -type d -name "*apartment*" -exec rm -r {} +
+
+%删除该目录下含xx的文件（不含子目录）
+find /path/to/folder -maxdepth 1 -type f -name "*xx*" -delete
+%含子目录
+find /path/to/folder -type f -name "*xx*" -delete
 
  
 
